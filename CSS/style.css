@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gallery-imgs {
+    width: 1000px;
+    display: flex; /*Align items horizontally*/
+    overflow-x: scroll; /*Add scroll bar*/
+}
+
+.gallery-imgs div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery-imgs img {
+    width: 100%;
+}
+
+.gallery-imgs::-webkit-scrollbar {
+    display: none;
+}
+
+.left-arrow, .right-arrow {
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+}
